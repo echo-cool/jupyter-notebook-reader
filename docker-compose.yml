@@ -6,6 +6,8 @@ services:
     container_name: jupyter_notebook_reader
     build:
       context: .
+    expose:
+      - "5000"
     ports:
       - "28909:5000"
     restart: on-failure
