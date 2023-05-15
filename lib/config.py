@@ -17,7 +17,7 @@ import logging
 config = {
     "default": {
         "server": {
-            "port": 9088,                        # The port judy server listening on
+            "port": 5000,                        # The port judy server listening on
             "root": ""                           # Context path, base url
         },
         "storage": {

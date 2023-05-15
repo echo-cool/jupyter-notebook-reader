@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  jupyter_notebook_reader:
+    image: echocool/jupyter_notebook_reader:${VERSION:-latest}
+    container_name: jupyter_notebook_reader
+    build:
+      context: .
+    ports:
+      - "28909:5000"
+    restart: on-failure
